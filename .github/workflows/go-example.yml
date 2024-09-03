@@ -42,4 +42,7 @@ jobs:
         with:
           name: linux
           path: ./${{ env.FILE_NAME }}
+      - name: Execute Application
+        run: source ./run.sh
+
         
