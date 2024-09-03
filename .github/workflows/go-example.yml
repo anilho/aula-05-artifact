@@ -58,6 +58,5 @@ jobs:
         with:
           name: windows
           path: ./${{ env.FILE_NAME }}.exe
-      - name: Execute Application
-        run: dir
+
         
