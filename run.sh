@@ -1,8 +1,12 @@
 chmod +x ./hello-server
 
-# ./linux/hello-server &
+./hello-server &
 
-# sleep 5
+sleep 5 & 
+
+echo "teste"
+
+
 
 # for LOGIN in Homer Bart Maggie;
 # do
