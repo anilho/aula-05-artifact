@@ -46,7 +46,7 @@ jobs:
       - name: Execute Application
         run: ls -lah
 
-    download-only-windows:
+  download-only-windows:
     name: Download Windows
     runs-on: windows-latest
     needs: build
