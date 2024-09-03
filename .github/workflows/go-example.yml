@@ -40,6 +40,6 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@master
         with:
-          name: hello-server
+          name: ${{ env.FILE_NAME }}
           path: ./${{ env.FILE_NAME }}
         
