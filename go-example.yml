@@ -1,0 +1,14 @@
+name: BuildGo
+env:
+  FILE_NAME: 'hello-server'
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
