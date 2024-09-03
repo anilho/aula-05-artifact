@@ -30,7 +30,8 @@ jobs:
           name: windows
           path: ./${{ env.FILE_NAME }}.exe
 
-  name: download-and-run-linux
+  download-and-run-linux:
+    name: teste
     runs-on: ubuntu-latest
     needs: build
     steps:
