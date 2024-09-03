@@ -13,4 +13,4 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Build Linux
-        run: go build {{ env.WEBAPP }}.go
+        run: go build $FILE_NAME.go
