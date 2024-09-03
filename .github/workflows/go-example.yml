@@ -31,7 +31,7 @@ jobs:
       #     path: ./${{ env.FILE_NAME }}.exe
 
   download-and-run-linux:
-    name: teste
+    name: Download and run Linux
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -45,4 +45,19 @@ jobs:
         run: source ./run.sh
       - name: Execute Application
         run: ls -lah
+
+    download-only-windows:
+    name: Download Windows
+    runs-on: windows-latest
+    needs: build
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: windows
+          path: ./${{ env.FILE_NAME }}.exe
+      - name: Execute Application
+        run: dir
         
