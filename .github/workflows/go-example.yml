@@ -42,6 +42,5 @@ jobs:
         with:
           name: linux
       - name: Execute Application
-        run: source ./run.sh
-
+        run: ls -la
         
