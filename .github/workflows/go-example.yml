@@ -42,5 +42,7 @@ jobs:
         with:
           name: linux
       - name: Execute Application
-        run: file hello-server
+        run: source ./run.sh
+      - name: Execute Application
+        run: ls -lah
         
