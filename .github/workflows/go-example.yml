@@ -29,3 +29,10 @@ jobs:
         with:
           name: windows
           path: ./${{ env.FILE_NAME }}.exe
+
+  download-and-run-linux:
+    name: Download and run Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        run: echo "checkout"
