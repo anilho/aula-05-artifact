@@ -21,8 +21,8 @@ jobs:
         with:
           name: linux
           path: ./${{ env.FILE_NAME }}
-      # - name: Upload artifact for windows
-      #   uses: actions/upload-artifact@v1.0.0
-      #   with:
-      #     name: windows
-      #     path: ./${{ env.FILE_NAME }}.exe
+      - name: Upload artifact for windows
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: windows
+          path: ./${{ env.FILE_NAME }}.exe
